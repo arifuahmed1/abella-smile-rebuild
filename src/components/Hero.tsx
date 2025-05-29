@@ -5,7 +5,7 @@ import { Phone, Calendar } from 'lucide-react';
 
 const Hero = () => {
   return (
-    <section className="relative py-20 bg-gradient-to-br from-blue-50 via-white to-blue-50 overflow-hidden">
+    <section className="relative py-20 bg-gradient-to-br from-olive-50 via-white to-olive-50 overflow-hidden">
       <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
       
       <div className="container mx-auto px-4">
@@ -15,7 +15,7 @@ const Hero = () => {
             <div className="space-y-4">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
                 Your Smile Deserves{' '}
-                <span className="text-blue-600">Expert Care</span>
+                <span className="text-olive-600">Expert Care</span>
               </h1>
               <p className="text-xl text-gray-600 leading-relaxed">
                 Experience comprehensive dental care for your entire family in our state-of-the-art North Wales facility. Quality dentistry with a personal touch.
@@ -23,7 +23,7 @@ const Hero = () => {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button size="lg" className="bg-orange-500 hover:bg-orange-600 text-white px-8">
+              <Button size="lg" className="bg-terracotta-500 hover:bg-terracotta-600 text-white px-8">
                 <Calendar className="w-5 h-5 mr-2" />
                 Schedule Your Appointment
               </Button>
@@ -50,11 +50,11 @@ const Hero = () => {
 
           {/* Right Content - Image */}
           <div className="relative">
-            <div className="aspect-square bg-gradient-to-br from-blue-100 to-blue-200 rounded-2xl shadow-2xl">
-              <div className="w-full h-full bg-gradient-to-br from-blue-200 to-blue-300 rounded-2xl flex items-center justify-center">
-                <div className="text-center text-blue-700">
+            <div className="aspect-square bg-gradient-to-br from-olive-100 to-olive-200 rounded-2xl shadow-2xl">
+              <div className="w-full h-full bg-gradient-to-br from-olive-200 to-olive-300 rounded-2xl flex items-center justify-center">
+                <div className="text-center text-olive-700">
                   <div className="w-24 h-24 bg-white rounded-full mx-auto mb-4 flex items-center justify-center shadow-lg">
-                    <svg className="w-12 h-12 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-12 h-12 text-olive-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
                     </svg>
                   </div>
@@ -65,7 +65,7 @@ const Hero = () => {
             </div>
             
             {/* Floating Elements */}
-            <div className="absolute -top-4 -right-4 w-16 h-16 bg-orange-500 rounded-full flex items-center justify-center shadow-lg animate-pulse">
+            <div className="absolute -top-4 -right-4 w-16 h-16 bg-terracotta-500 rounded-full flex items-center justify-center shadow-lg animate-pulse">
               <span className="text-white font-bold text-sm">NEW</span>
             </div>
             

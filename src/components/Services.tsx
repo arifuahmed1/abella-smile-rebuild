@@ -28,7 +28,7 @@ const Services = () => {
       description: "Restore function and appearance with our expert restorative treatments, including fillings, crowns, bridges, and dentures designed to look natural and feel comfortable.",
       features: ["Dental Fillings", "Crowns & Bridges", "Dentures", "Root Canals"],
       cta: "Learn About Restorations",
-      color: "bg-blue-100 text-blue-600"
+      color: "bg-olive-100 text-olive-600"
     },
     {
       icon: Zap,
@@ -52,7 +52,7 @@ const Services = () => {
       description: "Comprehensive dental care for patients of all ages, from children's first visits to senior dental health. We make dental care comfortable and stress-free for the whole family.",
       features: ["Pediatric Care", "Adult Dentistry", "Senior Care", "Family Plans"],
       cta: "Book Family Appointment",
-      color: "bg-orange-100 text-orange-600"
+      color: "bg-terracotta-100 text-terracotta-600"
     }
   ];
 
@@ -87,7 +87,7 @@ const Services = () => {
                 <ul className="space-y-2 mb-6">
                   {service.features.map((feature, idx) => (
                     <li key={idx} className="flex items-center text-sm text-gray-600">
-                      <div className="w-1.5 h-1.5 bg-blue-600 rounded-full mr-2"></div>
+                      <div className="w-1.5 h-1.5 bg-olive-600 rounded-full mr-2"></div>
                       {feature}
                     </li>
                   ))}
@@ -95,7 +95,7 @@ const Services = () => {
                 
                 <Button 
                   variant="outline" 
-                  className="w-full group-hover:bg-blue-600 group-hover:text-white transition-colors duration-300"
+                  className="w-full group-hover:bg-olive-600 group-hover:text-white transition-colors duration-300"
                 >
                   {service.cta}
                 </Button>
@@ -105,14 +105,14 @@ const Services = () => {
         </div>
 
         <div className="text-center mt-12">
-          <div className="bg-blue-50 rounded-xl p-8">
+          <div className="bg-olive-50 rounded-xl p-8">
             <h3 className="text-2xl font-bold text-gray-900 mb-4">
               Not Sure Which Treatment You Need?
             </h3>
             <p className="text-gray-600 mb-6 max-w-2xl mx-auto">
               Schedule a comprehensive consultation with Dr. Liang to discuss your dental needs and create a personalized treatment plan.
             </p>
-            <Button size="lg" className="bg-blue-600 hover:bg-blue-700">
+            <Button size="lg" className="bg-olive-600 hover:bg-olive-700">
               Schedule Consultation
             </Button>
           </div>
