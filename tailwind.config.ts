@@ -23,32 +23,6 @@ export default {
 				sans: ['Inter', 'sans-serif'],
 			},
 			colors: {
-				// Custom olive green theme
-				olive: {
-					50: '#f7f8f4',
-					100: '#eef0e8',
-					200: '#dde2d1',
-					300: '#c6ceb2',
-					400: '#aab890',
-					500: '#8fa070',
-					600: '#748558',
-					700: '#5d6b47',
-					800: '#4d573b',
-					900: '#424a33',
-				},
-				// Complementary terracotta
-				terracotta: {
-					50: '#fdf5f3',
-					100: '#fbe8e6',
-					200: '#f7d4d1',
-					300: '#f1b4ad',
-					400: '#e88a7f',
-					500: '#dc6c5c',
-					600: '#c85344',
-					700: '#a8422f',
-					800: '#8b3a2a',
-					900: '#743428',
-				},
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
 				ring: 'hsl(var(--ring))',

@@ -21,7 +21,7 @@ const Index = () => {
           <div className="flex items-center justify-between">
             {/* Logo */}
             <div className="flex items-center space-x-3">
-              <div className="w-10 h-10 bg-gradient-to-br from-olive-600 to-olive-700 rounded-lg flex items-center justify-center">
+              <div className="w-10 h-10 bg-gradient-to-br from-blue-600 to-blue-700 rounded-lg flex items-center justify-center">
                 <Heart className="w-6 h-6 text-white" />
               </div>
               <div>
@@ -33,18 +33,18 @@ const Index = () => {
             {/* Desktop Navigation & Contact */}
             <div className="hidden lg:flex items-center space-x-6">
               <nav className="flex items-center space-x-6">
-                <a href="#services" className="text-gray-700 hover:text-olive-600 transition-colors">Services</a>
-                <a href="#about" className="text-gray-700 hover:text-olive-600 transition-colors">About</a>
-                <a href="#testimonials" className="text-gray-700 hover:text-olive-600 transition-colors">Reviews</a>
-                <a href="#contact" className="text-gray-700 hover:text-olive-600 transition-colors">Contact</a>
+                <a href="#services" className="text-gray-700 hover:text-blue-600 transition-colors">Services</a>
+                <a href="#about" className="text-gray-700 hover:text-blue-600 transition-colors">About</a>
+                <a href="#testimonials" className="text-gray-700 hover:text-blue-600 transition-colors">Reviews</a>
+                <a href="#contact" className="text-gray-700 hover:text-blue-600 transition-colors">Contact</a>
               </nav>
               
               <div className="flex items-center space-x-4">
-                <a href="tel:267-217-3328" className="flex items-center space-x-2 text-olive-600 hover:text-olive-700 transition-colors">
+                <a href="tel:267-217-3328" className="flex items-center space-x-2 text-blue-600 hover:text-blue-700 transition-colors">
                   <Phone className="w-4 h-4" />
                   <span className="font-semibold">(267) 217-3328</span>
                 </a>
-                <Button className="bg-terracotta-500 hover:bg-terracotta-600 text-white">
+                <Button className="bg-orange-500 hover:bg-orange-600 text-white">
                   Schedule Appointment
                 </Button>
               </div>
@@ -65,7 +65,7 @@ const Index = () => {
       <Hero />
 
       {/* Why Choose Us Section */}
-      <section className="py-16 bg-gradient-to-b from-olive-50 to-white">
+      <section className="py-16 bg-gradient-to-b from-blue-50 to-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
@@ -79,8 +79,8 @@ const Index = () => {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             <Card className="text-center p-6 hover:shadow-lg transition-shadow">
               <CardContent className="pt-6">
-                <div className="w-12 h-12 bg-olive-100 rounded-lg mx-auto mb-4 flex items-center justify-center">
-                  <Users className="w-6 h-6 text-olive-600" />
+                <div className="w-12 h-12 bg-blue-100 rounded-lg mx-auto mb-4 flex items-center justify-center">
+                  <Users className="w-6 h-6 text-blue-600" />
                 </div>
                 <h3 className="font-semibold text-gray-900 mb-2">Comprehensive Care</h3>
                 <p className="text-gray-600 text-sm">
@@ -91,8 +91,8 @@ const Index = () => {
 
             <Card className="text-center p-6 hover:shadow-lg transition-shadow">
               <CardContent className="pt-6">
-                <div className="w-12 h-12 bg-olive-100 rounded-lg mx-auto mb-4 flex items-center justify-center">
-                  <Award className="w-6 h-6 text-olive-600" />
+                <div className="w-12 h-12 bg-blue-100 rounded-lg mx-auto mb-4 flex items-center justify-center">
+                  <Award className="w-6 h-6 text-blue-600" />
                 </div>
                 <h3 className="font-semibold text-gray-900 mb-2">Advanced Technology</h3>
                 <p className="text-gray-600 text-sm">
@@ -103,8 +103,8 @@ const Index = () => {
 
             <Card className="text-center p-6 hover:shadow-lg transition-shadow">
               <CardContent className="pt-6">
-                <div className="w-12 h-12 bg-olive-100 rounded-lg mx-auto mb-4 flex items-center justify-center">
-                  <Shield className="w-6 h-6 text-olive-600" />
+                <div className="w-12 h-12 bg-blue-100 rounded-lg mx-auto mb-4 flex items-center justify-center">
+                  <Shield className="w-6 h-6 text-blue-600" />
                 </div>
                 <h3 className="font-semibold text-gray-900 mb-2">Affordable Options</h3>
                 <p className="text-gray-600 text-sm">
@@ -115,8 +115,8 @@ const Index = () => {
 
             <Card className="text-center p-6 hover:shadow-lg transition-shadow">
               <CardContent className="pt-6">
-                <div className="w-12 h-12 bg-olive-100 rounded-lg mx-auto mb-4 flex items-center justify-center">
-                  <Clock className="w-6 h-6 text-olive-600" />
+                <div className="w-12 h-12 bg-blue-100 rounded-lg mx-auto mb-4 flex items-center justify-center">
+                  <Clock className="w-6 h-6 text-blue-600" />
                 </div>
                 <h3 className="font-semibold text-gray-900 mb-2">Convenient Scheduling</h3>
                 <p className="text-gray-600 text-sm">
@@ -156,14 +156,14 @@ const Index = () => {
             {/* Map Placeholder */}
             <Card>
               <CardContent className="p-6">
-                <div className="aspect-video bg-gradient-to-br from-olive-100 to-olive-200 rounded-lg flex items-center justify-center mb-4">
+                <div className="aspect-video bg-gradient-to-br from-blue-100 to-blue-200 rounded-lg flex items-center justify-center mb-4">
                   <div className="text-center">
-                    <MapPin className="w-12 h-12 text-olive-600 mx-auto mb-2" />
-                    <p className="text-olive-700 font-medium">Interactive Map</p>
-                    <p className="text-olive-600 text-sm">217 N Main St, North Wales, PA 19454</p>
+                    <MapPin className="w-12 h-12 text-blue-600 mx-auto mb-2" />
+                    <p className="text-blue-700 font-medium">Interactive Map</p>
+                    <p className="text-blue-600 text-sm">217 N Main St, North Wales, PA 19454</p>
                   </div>
                 </div>
-                <Button className="w-full bg-olive-600 hover:bg-olive-700">
+                <Button className="w-full bg-blue-600 hover:bg-blue-700">
                   <MapPin className="w-4 h-4 mr-2" />
                   Get Directions
                 </Button>
@@ -175,7 +175,7 @@ const Index = () => {
               <Card>
                 <CardContent className="p-6">
                   <h3 className="text-xl font-bold text-gray-900 mb-4 flex items-center">
-                    <Clock className="w-5 h-5 mr-2 text-olive-600" />
+                    <Clock className="w-5 h-5 mr-2 text-blue-600" />
                     Office Hours
                   </h3>
                   <div className="space-y-2">
