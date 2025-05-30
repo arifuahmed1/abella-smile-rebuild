@@ -4,6 +4,24 @@ import { Button } from '@/components/ui/button';
 import { Phone, Calendar } from 'lucide-react';
 
 const Hero = () => {
+  const handleSmoothScroll = (elementId: string) => {
+    const element = document.getElementById(elementId);
+    if (element) {
+      element.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      });
+    }
+  };
+
+  const handleScheduleAppointment = () => {
+    handleSmoothScroll('contact');
+  };
+
+  const handleEmergencyCall = () => {
+    window.open('tel:267-217-3328', '_self');
+  };
+
   return (
     <section className="relative py-20 bg-gradient-to-br from-blue-50 via-white to-blue-50 overflow-hidden">
       <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
@@ -23,11 +41,20 @@ const Hero = () => {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button size="lg" className="bg-orange-500 hover:bg-orange-600 text-white px-8">
+              <Button 
+                size="lg" 
+                className="bg-orange-500 hover:bg-orange-600 text-white px-8"
+                onClick={handleScheduleAppointment}
+              >
                 <Calendar className="w-5 h-5 mr-2" />
                 Schedule Your Appointment
               </Button>
-              <Button size="lg" variant="outline" className="border-red-500 text-red-600 hover:bg-red-50">
+              <Button 
+                size="lg" 
+                variant="outline" 
+                className="border-red-500 text-red-600 hover:bg-red-50"
+                onClick={handleEmergencyCall}
+              >
                 <Phone className="w-5 h-5 mr-2" />
                 Emergency Dental Care
               </Button>
