@@ -23,6 +23,16 @@ const Index = () => {
     }
   };
 
+  const handleScheduleAppointment = () => {
+    // Scroll to contact section for appointment scheduling
+    handleSmoothScroll('contact');
+  };
+
+  const handleEmergencyCall = () => {
+    // Initiate phone call for emergency care
+    window.open('tel:267-217-3328', '_self');
+  };
+
   return (
     <div className="min-h-screen bg-white">
       {/* Header */}
@@ -74,7 +84,10 @@ const Index = () => {
                   <Phone className="w-4 h-4" />
                   <span className="font-semibold">(267) 217-3328</span>
                 </a>
-                <Button className="bg-orange-500 hover:bg-orange-600 text-white">
+                <Button 
+                  onClick={handleScheduleAppointment}
+                  className="bg-orange-500 hover:bg-orange-600 text-white"
+                >
                   Schedule Appointment
                 </Button>
               </div>
@@ -82,7 +95,11 @@ const Index = () => {
 
             {/* Mobile Menu Button */}
             <div className="lg:hidden">
-              <Button variant="outline" size="sm">
+              <Button 
+                variant="outline" 
+                size="sm"
+                onClick={handleEmergencyCall}
+              >
                 <Phone className="w-4 h-4 mr-2" />
                 Call Now
               </Button>
@@ -249,7 +266,10 @@ const Index = () => {
                   <p className="text-red-700 mb-4">
                     We provide same-day emergency care for urgent dental situations.
                   </p>
-                  <Button className="w-full bg-red-600 hover:bg-red-700">
+                  <Button 
+                    onClick={handleEmergencyCall}
+                    className="w-full bg-red-600 hover:bg-red-700"
+                  >
                     <Phone className="w-4 h-4 mr-2" />
                     Call Now: (267) 217-3328
                   </Button>
