@@ -13,6 +13,16 @@ import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
 
 const Index = () => {
+  const handleSmoothScroll = (elementId: string) => {
+    const element = document.getElementById(elementId);
+    if (element) {
+      element.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      });
+    }
+  };
+
   return (
     <div className="min-h-screen bg-white">
       {/* Header */}
@@ -33,10 +43,30 @@ const Index = () => {
             {/* Desktop Navigation & Contact */}
             <div className="hidden lg:flex items-center space-x-6">
               <nav className="flex items-center space-x-6">
-                <a href="#services" className="text-gray-700 hover:text-blue-600 transition-colors">Services</a>
-                <a href="#about" className="text-gray-700 hover:text-blue-600 transition-colors">About</a>
-                <a href="#testimonials" className="text-gray-700 hover:text-blue-600 transition-colors">Reviews</a>
-                <a href="#contact" className="text-gray-700 hover:text-blue-600 transition-colors">Contact</a>
+                <button 
+                  onClick={() => handleSmoothScroll('services')} 
+                  className="text-gray-700 hover:text-blue-600 transition-colors cursor-pointer"
+                >
+                  Services
+                </button>
+                <button 
+                  onClick={() => handleSmoothScroll('about')} 
+                  className="text-gray-700 hover:text-blue-600 transition-colors cursor-pointer"
+                >
+                  About
+                </button>
+                <button 
+                  onClick={() => handleSmoothScroll('testimonials')} 
+                  className="text-gray-700 hover:text-blue-600 transition-colors cursor-pointer"
+                >
+                  Reviews
+                </button>
+                <button 
+                  onClick={() => handleSmoothScroll('contact')} 
+                  className="text-gray-700 hover:text-blue-600 transition-colors cursor-pointer"
+                >
+                  Contact
+                </button>
               </nav>
               
               <div className="flex items-center space-x-4">
