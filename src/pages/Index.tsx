@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Phone, MapPin, Clock, Star, Shield, Heart, Award, Users } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -60,8 +59,8 @@ const Index = () => {
                 </button>
               </nav>
               
-              {/* Contact Info */}
-              <div className="flex items-center space-x-4">
+              {/* Contact Info with Box */}
+              <div className="flex items-center space-x-4 bg-blue-50 border border-blue-200 rounded-lg p-3 shadow-sm">
                 <a href="tel:267-217-3328" className="flex items-center space-x-2 text-blue-600 hover:text-blue-700 transition-colors">
                   <Phone className="w-4 h-4" />
                   <span className="font-semibold">(267) 217-3328</span>
