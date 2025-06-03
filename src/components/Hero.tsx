@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Phone, Calendar } from 'lucide-react';
@@ -24,7 +23,7 @@ const Hero = () => {
 
   return (
     <section className="relative py-20 bg-gradient-to-br from-blue-50 via-white to-blue-50 overflow-hidden">
-      <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
+      {/* <div className="absolute inset-0 bg-grid-pattern opacity-5"></div> */}
       
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-12 items-center">

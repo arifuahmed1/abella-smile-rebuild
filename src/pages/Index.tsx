@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Phone, MapPin, Clock, Star, Shield, Heart, Award, Users } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -33,18 +32,14 @@ const Index = () => {
       {/* Header */}
       <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100">
         <div className="container mx-auto px-4 py-4">
-          <div className="flex items-center justify-between">
+          <div className="relative flex items-center justify-between">
             {/* Logo */}
             <div className="flex items-center space-x-3">
               <img alt="Abbella Dental Care Logo" className="h-12 w-auto" src="/lovable-uploads/b30c4365-1bbe-495b-90e1-c71a31115905.png" />
             </div>
 
-            {/* Desktop Navigation & Contact */}
-            <div className="hidden lg:flex items-center justify-between w-full max-w-4xl mx-auto">
-              {/* Spacer for logo */}
-              <div className="w-32"></div>
-              
-              {/* Centered Navigation */}
+            {/* Desktop Navigation - Centered Absolutely */}
+            <div className="hidden lg:flex absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
               <nav className="flex items-center space-x-6">
                 <button onClick={() => handleSmoothScroll('services')} className="text-gray-700 hover:text-blue-600 transition-colors cursor-pointer">
                   Services
@@ -59,17 +54,17 @@ const Index = () => {
                   Contact
                 </button>
               </nav>
-              
-              {/* Contact Info */}
-              <div className="flex items-center space-x-4">
-                <a href="tel:267-217-3328" className="flex items-center space-x-2 text-blue-600 hover:text-blue-700 transition-colors">
-                  <Phone className="w-4 h-4" />
-                  <span className="font-semibold">(267) 217-3328</span>
-                </a>
-                <Button onClick={handleScheduleAppointment} className="bg-orange-500 hover:bg-orange-600 text-white">
-                  Schedule Appointment
-                </Button>
-              </div>
+            </div>
+
+            {/* Contact Info - Always on the right */}
+            <div className="hidden lg:flex items-center space-x-4">
+              <a href="tel:267-217-3328" className="flex items-center space-x-2 text-blue-600 hover:text-blue-700 transition-colors">
+                <Phone className="w-4 h-4" />
+                <span className="font-semibold">(267) 217-3328</span>
+              </a>
+              <Button onClick={handleScheduleAppointment} className="bg-orange-500 hover:bg-orange-600 text-white">
+                Schedule Appointment
+              </Button>
             </div>
 
             {/* Mobile Menu Button */}
