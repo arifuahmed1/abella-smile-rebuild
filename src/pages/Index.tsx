@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Phone, MapPin, Clock, Star, Shield, Heart, Award, Users } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -34,8 +35,8 @@ const Index = () => {
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             {/* Logo */}
-            <div className="flex items-center space-x-3">
-              <img alt="Abbella Dental Care Logo" className="h-12 w-auto" src="/lovable-uploads/b30c4365-1bbe-495b-90e1-c71a31115905.png" />
+            <div className="flex items-center justify-center">
+              <img alt="Abbella Dental Care Logo" className="h-16 w-auto" src="/lovable-uploads/61a5f27e-f468-422b-a817-afaaa2130a4e.png" />
             </div>
 
             {/* Desktop Navigation & Contact */}
