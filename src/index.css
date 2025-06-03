@@ -13,16 +13,16 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 67 27% 62%; /* Olive Green */
+    --primary: 215 37% 26%; /* Dark Navy #2B3C5B */
     --primary-foreground: 210 40% 98%;
 
-    --secondary: 49 29% 51%; /* Gold/Bronze */
+    --secondary: 14 89% 54%; /* Coral Orange #F15A22 */
     --secondary-foreground: 222.2 47.4% 11.2%;
 
-    --muted: 49 29% 90%; /* Muted Gold/Bronze */
-    --muted-foreground: 67 15% 40%; /* Muted Olive */
+    --muted: 14 89% 90%; /* Muted Coral */
+    --muted-foreground: 215 37% 40%; /* Muted Navy */
 
-    --accent: 67 27% 62%; /* Olive Green */
+    --accent: 215 37% 26%; /* Dark Navy */
     --accent-foreground: 222.2 47.4% 11.2%;
 
     --destructive: 0 84.2% 60.2%;
@@ -30,25 +30,18 @@
 
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 67 27% 62%; /* Olive Green */
+    --ring: 215 37% 26%; /* Dark Navy */
 
     --radius: 0.5rem;
 
     --sidebar-background: 0 0% 98%;
-
     --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 67 27% 62%; /* Olive Green */
-
+    --sidebar-primary: 215 37% 26%; /* Dark Navy */
     --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 49 29% 51%; /* Gold/Bronze */
-
+    --sidebar-accent: 14 89% 54%; /* Coral Orange */
     --sidebar-accent-foreground: 240 5.9% 10%;
-
     --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 67 27% 62%; /* Olive Green */
+    --sidebar-ring: 215 37% 26%; /* Dark Navy */
   }
 
   .dark {
