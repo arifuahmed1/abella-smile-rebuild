@@ -1,28 +1,23 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Phone, Calendar } from 'lucide-react';
-
 const Hero = () => {
   const handleSmoothScroll = (elementId: string) => {
     const element = document.getElementById(elementId);
     if (element) {
       element.scrollIntoView({
         behavior: 'smooth',
-        block: 'start',
+        block: 'start'
       });
     }
   };
-
   const handleScheduleAppointment = () => {
     handleSmoothScroll('contact');
   };
-
   const handleEmergencyCall = () => {
     window.open('tel:267-217-3328', '_self');
   };
-
-  return (
-    <section className="relative py-20 bg-gradient-to-br from-blue-50 via-white to-blue-50 overflow-hidden">
+  return <section className="relative py-20 bg-gradient-to-br from-blue-50 via-white to-blue-50 overflow-hidden">
       {/* <div className="absolute inset-0 bg-grid-pattern opacity-5"></div> */}
       
       <div className="container mx-auto px-4">
@@ -40,20 +35,11 @@ const Hero = () => {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button 
-                size="lg" 
-                className="bg-orange-500 hover:bg-orange-600 text-white px-8"
-                onClick={handleScheduleAppointment}
-              >
+              <Button size="lg" className="bg-orange-500 hover:bg-orange-600 text-white px-8" onClick={handleScheduleAppointment}>
                 <Calendar className="w-5 h-5 mr-2" />
                 Schedule Your Appointment
               </Button>
-              <Button 
-                size="lg" 
-                variant="outline" 
-                className="border-red-500 text-red-600 hover:bg-red-50"
-                onClick={handleEmergencyCall}
-              >
+              <Button size="lg" variant="outline" className="border-red-500 text-red-600 hover:bg-red-50" onClick={handleEmergencyCall}>
                 <Phone className="w-5 h-5 mr-2" />
                 Emergency Dental Care
               </Button>
@@ -63,13 +49,11 @@ const Hero = () => {
               <p className="text-sm text-gray-500 mb-2">Trusted by North Wales families</p>
               <div className="flex items-center space-x-4">
                 <div className="flex items-center space-x-1">
-                  {[...Array(5)].map((_, i) => (
-                    <svg key={i} className="w-5 h-5 text-yellow-400 fill-current" viewBox="0 0 20 20">
+                  {[...Array(5)].map((_, i) => <svg key={i} className="w-5 h-5 text-yellow-400 fill-current" viewBox="0 0 20 20">
                       <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                    </svg>
-                  ))}
+                    </svg>)}
                 </div>
-                <span className="text-sm text-gray-600">4.9/5 from 250+ reviews</span>
+                <span className="text-sm text-gray-600">4.3/5 from 60+ reviews</span>
               </div>
             </div>
           </div>
@@ -104,8 +88,6 @@ const Hero = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;
