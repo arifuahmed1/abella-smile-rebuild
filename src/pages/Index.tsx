@@ -10,68 +10,47 @@ import Testimonials from '@/components/Testimonials';
 import Insurance from '@/components/Insurance';
 import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
-
 const Index = () => {
   const handleSmoothScroll = (elementId: string) => {
     const element = document.getElementById(elementId);
     if (element) {
       element.scrollIntoView({
         behavior: 'smooth',
-        block: 'start',
+        block: 'start'
       });
     }
   };
-
   const handleScheduleAppointment = () => {
     // Scroll to contact section for appointment scheduling
     handleSmoothScroll('contact');
   };
-
   const handleEmergencyCall = () => {
     // Initiate phone call for emergency care
     window.open('tel:267-217-3328', '_self');
   };
-
-  return (
-    <div className="min-h-screen bg-white">
+  return <div className="min-h-screen bg-white">
       {/* Header */}
       <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100">
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             {/* Logo */}
             <div className="flex items-center space-x-3">
-              <img 
-                src="/lovable-uploads/8c52ef22-90b1-4655-82f1-08d15cc04eb7.png" 
-                alt="Abbella Dental Care Logo" 
-                className="h-12 w-auto"
-              />
+              <img alt="Abbella Dental Care Logo" className="h-12 w-auto" src="/lovable-uploads/b30c4365-1bbe-495b-90e1-c71a31115905.png" />
             </div>
 
             {/* Desktop Navigation & Contact */}
             <div className="hidden lg:flex items-center space-x-6">
               <nav className="flex items-center space-x-6">
-                <button 
-                  onClick={() => handleSmoothScroll('services')} 
-                  className="text-gray-700 hover:text-blue-600 transition-colors cursor-pointer"
-                >
+                <button onClick={() => handleSmoothScroll('services')} className="text-gray-700 hover:text-blue-600 transition-colors cursor-pointer">
                   Services
                 </button>
-                <button 
-                  onClick={() => handleSmoothScroll('about')} 
-                  className="text-gray-700 hover:text-blue-600 transition-colors cursor-pointer"
-                >
+                <button onClick={() => handleSmoothScroll('about')} className="text-gray-700 hover:text-blue-600 transition-colors cursor-pointer">
                   About
                 </button>
-                <button 
-                  onClick={() => handleSmoothScroll('testimonials')} 
-                  className="text-gray-700 hover:text-blue-600 transition-colors cursor-pointer"
-                >
+                <button onClick={() => handleSmoothScroll('testimonials')} className="text-gray-700 hover:text-blue-600 transition-colors cursor-pointer">
                   Reviews
                 </button>
-                <button 
-                  onClick={() => handleSmoothScroll('contact')} 
-                  className="text-gray-700 hover:text-blue-600 transition-colors cursor-pointer"
-                >
+                <button onClick={() => handleSmoothScroll('contact')} className="text-gray-700 hover:text-blue-600 transition-colors cursor-pointer">
                   Contact
                 </button>
               </nav>
@@ -81,10 +60,7 @@ const Index = () => {
                   <Phone className="w-4 h-4" />
                   <span className="font-semibold">(267) 217-3328</span>
                 </a>
-                <Button 
-                  onClick={handleScheduleAppointment}
-                  className="bg-orange-500 hover:bg-orange-600 text-white"
-                >
+                <Button onClick={handleScheduleAppointment} className="bg-orange-500 hover:bg-orange-600 text-white">
                   Schedule Appointment
                 </Button>
               </div>
@@ -92,11 +68,7 @@ const Index = () => {
 
             {/* Mobile Menu Button */}
             <div className="lg:hidden">
-              <Button 
-                variant="outline" 
-                size="sm"
-                onClick={handleEmergencyCall}
-              >
+              <Button variant="outline" size="sm" onClick={handleEmergencyCall}>
                 <Phone className="w-4 h-4 mr-2" />
                 Call Now
               </Button>
@@ -263,10 +235,7 @@ const Index = () => {
                   <p className="text-red-700 mb-4">
                     We provide same-day emergency care for urgent dental situations.
                   </p>
-                  <Button 
-                    onClick={handleEmergencyCall}
-                    className="w-full bg-red-600 hover:bg-red-700"
-                  >
+                  <Button onClick={handleEmergencyCall} className="w-full bg-red-600 hover:bg-red-700">
                     <Phone className="w-4 h-4 mr-2" />
                     Call Now: (267) 217-3328
                   </Button>
@@ -282,8 +251,6 @@ const Index = () => {
 
       {/* Footer */}
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default Index;
