@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Phone, MapPin, Clock, Star, Shield, Heart, Award, Users } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -39,7 +40,11 @@ const Index = () => {
             </div>
 
             {/* Desktop Navigation & Contact */}
-            <div className="hidden lg:flex items-center space-x-6">
+            <div className="hidden lg:flex items-center justify-between w-full max-w-4xl mx-auto">
+              {/* Spacer for logo */}
+              <div className="w-32"></div>
+              
+              {/* Centered Navigation */}
               <nav className="flex items-center space-x-6">
                 <button onClick={() => handleSmoothScroll('services')} className="text-gray-700 hover:text-blue-600 transition-colors cursor-pointer">
                   Services
@@ -55,6 +60,7 @@ const Index = () => {
                 </button>
               </nav>
               
+              {/* Contact Info */}
               <div className="flex items-center space-x-4">
                 <a href="tel:267-217-3328" className="flex items-center space-x-2 text-blue-600 hover:text-blue-700 transition-colors">
                   <Phone className="w-4 h-4" />
