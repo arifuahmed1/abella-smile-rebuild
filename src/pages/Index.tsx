@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Phone, MapPin, Clock, Star, Shield, Heart, Award, Users } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -11,6 +10,7 @@ import Testimonials from '@/components/Testimonials';
 import Insurance from '@/components/Insurance';
 import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
+
 const Index = () => {
   const handleSmoothScroll = (elementId: string) => {
     const element = document.getElementById(elementId);
@@ -21,47 +21,36 @@ const Index = () => {
       });
     }
   };
+
   const handleScheduleAppointment = () => {
     // Scroll to contact section for appointment scheduling
     handleSmoothScroll('contact');
   };
+
   const handleEmergencyCall = () => {
     // Initiate phone call for emergency care
     window.open('tel:267-217-3328', '_self');
   };
-  return <div className="min-h-screen bg-white">
+
+  return (
+    <div className="min-h-screen bg-white">
       {/* Header */}
       <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100">
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
-            {/* Logo */}
-            <div className="flex items-center space-x-3">
-              <img alt="Abbella Dental Care Logo" className="h-12 w-auto" src="/lovable-uploads/b30c4365-1bbe-495b-90e1-c71a31115905.png" />
-            </div>
+            {/* Left side - Logo and Contact Info */}
+            <div className="flex items-center space-x-8">
+              {/* Logo */}
+              <div className="flex items-center">
+                <img 
+                  alt="Abbella Dental Care Logo" 
+                  className="h-12 w-auto" 
+                  src="/lovable-uploads/b30c4365-1bbe-495b-90e1-c71a31115905.png" 
+                />
+              </div>
 
-            {/* Desktop Navigation & Contact */}
-            <div className="hidden lg:flex items-center justify-between w-full max-w-4xl mx-auto">
-              {/* Spacer for logo */}
-              <div className="w-32"></div>
-              
-              {/* Centered Navigation */}
-              <nav className="flex items-center space-x-6">
-                <button onClick={() => handleSmoothScroll('services')} className="text-gray-700 hover:text-blue-600 transition-colors cursor-pointer">
-                  Services
-                </button>
-                <button onClick={() => handleSmoothScroll('about')} className="text-gray-700 hover:text-blue-600 transition-colors cursor-pointer">
-                  About
-                </button>
-                <button onClick={() => handleSmoothScroll('testimonials')} className="text-gray-700 hover:text-blue-600 transition-colors cursor-pointer">
-                  Reviews
-                </button>
-                <button onClick={() => handleSmoothScroll('contact')} className="text-gray-700 hover:text-blue-600 transition-colors cursor-pointer">
-                  Contact
-                </button>
-              </nav>
-              
-              {/* Contact Info */}
-              <div className="flex items-center space-x-4">
+              {/* Contact Info - Desktop only */}
+              <div className="hidden lg:flex items-center space-x-4">
                 <a href="tel:267-217-3328" className="flex items-center space-x-2 text-blue-600 hover:text-blue-700 transition-colors">
                   <Phone className="w-4 h-4" />
                   <span className="font-semibold">(267) 217-3328</span>
@@ -71,6 +60,22 @@ const Index = () => {
                 </Button>
               </div>
             </div>
+
+            {/* Centered Navigation */}
+            <nav className="hidden lg:flex items-center space-x-6 absolute left-1/2 transform -translate-x-1/2">
+              <button onClick={() => handleSmoothScroll('services')} className="text-gray-700 hover:text-blue-600 transition-colors cursor-pointer">
+                Services
+              </button>
+              <button onClick={() => handleSmoothScroll('about')} className="text-gray-700 hover:text-blue-600 transition-colors cursor-pointer">
+                About
+              </button>
+              <button onClick={() => handleSmoothScroll('testimonials')} className="text-gray-700 hover:text-blue-600 transition-colors cursor-pointer">
+                Reviews
+              </button>
+              <button onClick={() => handleSmoothScroll('contact')} className="text-gray-700 hover:text-blue-600 transition-colors cursor-pointer">
+                Contact
+              </button>
+            </nav>
 
             {/* Mobile Menu Button */}
             <div className="lg:hidden">
@@ -257,6 +262,8 @@ const Index = () => {
 
       {/* Footer */}
       <Footer />
-    </div>;
+    </div>
+  );
 };
+
 export default Index;
